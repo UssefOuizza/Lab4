@@ -7,25 +7,25 @@ import javax.persistence.Entity;
 @DiscriminatorValue("MOTO")
 public class Moto extends Vehicule {
 
-    private boolean sidecar;
+    private boolean avecSidecar;
 
     public Moto() {}
 
-    public Moto(String marque, boolean sidecar) {
-        super(marque);
-        this.sidecar = sidecar;
+    public Moto(String constructeur, boolean avecSidecar) {
+        super(constructeur);
+        this.avecSidecar = avecSidecar;
     }
 
     // getters et setters
-    public boolean isSidecar() {
-        return sidecar;
+    public boolean isAvecSidecar() {
+        return avecSidecar;
     }
 
-    public boolean getSidecar() {
-        return sidecar;
+    public boolean getAvecSidecar() {
+        return avecSidecar;
     }
 
-    public void setSidecar(boolean sidecar) {
-        this.sidecar = sidecar;
+    public void setAvecSidecar(boolean avecSidecar) {
+        this.avecSidecar = avecSidecar;
     }
 }

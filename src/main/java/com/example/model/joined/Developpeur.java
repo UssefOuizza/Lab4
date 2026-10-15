@@ -5,21 +5,21 @@ import javax.persistence.Entity;
 @Entity
 public class Developpeur extends Employe {
 
-    private String langage;
+    private String langagePrincipal;
 
     public Developpeur() {}
 
-    public Developpeur(String nom, String langage) {
-        super(nom);
-        this.langage = langage;
+    public Developpeur(String nomEmploye, String langagePrincipal) {
+        super(nomEmploye);
+        this.langagePrincipal = langagePrincipal;
     }
 
     // getters et setters
-    public String getLangage() {
-        return langage;
+    public String getLangagePrincipal() {
+        return langagePrincipal;
     }
 
-    public void setLangage(String langage) {
-        this.langage = langage;
+    public void setLangagePrincipal(String langagePrincipal) {
+        this.langagePrincipal = langagePrincipal;
     }
 }

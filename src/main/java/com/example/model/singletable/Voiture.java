@@ -7,21 +7,21 @@ import javax.persistence.Entity;
 @DiscriminatorValue("VOITURE")
 public class Voiture extends Vehicule {
 
-    private int nombrePortes;
+    private int nbPortes;
 
     public Voiture() {}
 
-    public Voiture(String marque, int nombrePortes) {
-        super(marque);
-        this.nombrePortes = nombrePortes;
+    public Voiture(String constructeur, int nbPortes) {
+        super(constructeur);
+        this.nbPortes = nbPortes;
     }
 
     // getters et setters
-    public int getNombrePortes() {
-        return nombrePortes;
+    public int getNbPortes() {
+        return nbPortes;
     }
 
-    public void setNombrePortes(int nombrePortes) {
-        this.nombrePortes = nombrePortes;
+    public void setNbPortes(int nbPortes) {
+        this.nbPortes = nbPortes;
     }
 }

@@ -11,12 +11,12 @@ public abstract class Vehicule {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String marque;
+    private String constructeur;
 
     public Vehicule() {}
 
-    public Vehicule(String marque) {
-        this.marque = marque;
+    public Vehicule(String constructeur) {
+        this.constructeur = constructeur;
     }
 
     // getters et setters
@@ -28,11 +28,11 @@ public abstract class Vehicule {
         this.id = id;
     }
 
-    public String getMarque() {
-        return marque;
+    public String getConstructeur() {
+        return constructeur;
     }
 
-    public void setMarque(String marque) {
-        this.marque = marque;
+    public void setConstructeur(String constructeur) {
+        this.constructeur = constructeur;
     }
 }

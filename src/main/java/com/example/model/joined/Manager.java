@@ -5,21 +5,21 @@ import javax.persistence.Entity;
 @Entity
 public class Manager extends Employe {
 
-    private int nombreEquipes;
+    private int nbEquipes;
 
     public Manager() {}
 
-    public Manager(String nom, int nombreEquipes) {
-        super(nom);
-        this.nombreEquipes = nombreEquipes;
+    public Manager(String nomEmploye, int nbEquipes) {
+        super(nomEmploye);
+        this.nbEquipes = nbEquipes;
     }
 
     // getters et setters
-    public int getNombreEquipes() {
-        return nombreEquipes;
+    public int getNbEquipes() {
+        return nbEquipes;
     }
 
-    public void setNombreEquipes(int nombreEquipes) {
-        this.nombreEquipes = nombreEquipes;
+    public void setNbEquipes(int nbEquipes) {
+        this.nbEquipes = nbEquipes;
     }
 }

@@ -10,12 +10,12 @@ public abstract class Produit {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String nom;
+    private String designation;
 
     public Produit() {}
 
-    public Produit(String nom) {
-        this.nom = nom;
+    public Produit(String designation) {
+        this.designation = designation;
     }
 
     // getters et setters
@@ -27,11 +27,11 @@ public abstract class Produit {
         this.id = id;
     }
 
-    public String getNom() {
-        return nom;
+    public String getDesignation() {
+        return designation;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setDesignation(String designation) {
+        this.designation = designation;
     }
 }

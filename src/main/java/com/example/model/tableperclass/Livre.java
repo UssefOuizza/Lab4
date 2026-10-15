@@ -5,21 +5,21 @@ import javax.persistence.Entity;
 @Entity
 public class Livre extends Produit {
 
-    private String auteur;
+    private String nomAuteur;
 
     public Livre() {}
 
-    public Livre(String nom, String auteur) {
-        super(nom);
-        this.auteur = auteur;
+    public Livre(String designation, String nomAuteur) {
+        super(designation);
+        this.nomAuteur = nomAuteur;
     }
 
     // getters et setters
-    public String getAuteur() {
-        return auteur;
+    public String getNomAuteur() {
+        return nomAuteur;
     }
 
-    public void setAuteur(String auteur) {
-        this.auteur = auteur;
+    public void setNomAuteur(String nomAuteur) {
+        this.nomAuteur = nomAuteur;
     }
 }

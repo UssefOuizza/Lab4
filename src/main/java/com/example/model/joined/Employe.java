@@ -10,12 +10,12 @@ public abstract class Employe {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nom;
+    private String nomEmploye;
 
     public Employe() {}
 
-    public Employe(String nom) {
-        this.nom = nom;
+    public Employe(String nomEmploye) {
+        this.nomEmploye = nomEmploye;
     }
 
     // getters et setters
@@ -27,11 +27,11 @@ public abstract class Employe {
         this.id = id;
     }
 
-    public String getNom() {
-        return nom;
+    public String getNomEmploye() {
+        return nomEmploye;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNomEmploye(String nomEmploye) {
+        this.nomEmploye = nomEmploye;
     }
 }

@@ -42,15 +42,15 @@ public class App {
         // Lecture des entités
         System.out.println("--- Liste des véhicules ---");
         em.createQuery("SELECT v FROM Vehicule v", com.example.model.singletable.Vehicule.class)
-                .getResultList().forEach(v -> System.out.println(v.getClass().getSimpleName() + ": " + v.getMarque()));
+                .getResultList().forEach(v -> System.out.println(v.getClass().getSimpleName() + ": " + v.getConstructeur()));
 
         System.out.println("--- Liste des employés ---");
         em.createQuery("SELECT e FROM Employe e", com.example.model.joined.Employe.class)
-                .getResultList().forEach(e -> System.out.println(e.getClass().getSimpleName() + ": " + e.getNom()));
+                .getResultList().forEach(e -> System.out.println(e.getClass().getSimpleName() + ": " + e.getNomEmploye()));
 
         System.out.println("--- Liste des produits ---");
         em.createQuery("SELECT p FROM Produit p", com.example.model.tableperclass.Produit.class)
-                .getResultList().forEach(p -> System.out.println(p.getClass().getSimpleName() + ": " + p.getNom()));
+                .getResultList().forEach(p -> System.out.println(p.getClass().getSimpleName() + ": " + p.getDesignation()));
 
         em.close();
         emf.close();
